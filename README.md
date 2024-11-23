@@ -1,1 +1,7 @@
-# Inheritance
+I started this project by creating the simpleStorage contract to store my favourite number in which the storeNumber() is used to set the favourite number and the getFavouriteNumber() is used to get the favourite number after it is been set. The storeNumber() was stagged virtually in order to allow it to be overriden by the storeNumber() in the AdvancedStorage contract.
+
+Secondly, I imported the SimpleStorage contract using this code "import "./SimpleStorage.sol";" into the AdvancedStorage contract which allowed me to make changes to the SimpleStorage contract. And in the AdvancedStorage contract, the storenumber() in the SimpleStorage contract was overridden by the storeNumber() in the AdvancedStorage contract to include setting the favourite number with the timeStamp of each block. And similarly, the getFavouriteNumber() in the SimpleStorage contract was altered to get both the favourite number set and the timeStamp using the getWithTimeStamp().
+
+And I created the conflict.sol file to store different contracts of the same function name, So in resolving the conflicts in those contracts, a third contract named contract C was created to override those functions in both contracts A and B. Since it was all set to virtual to the allow the overriding of another contract.
+
+I was having serious problems in pushing the files to the github. But with constant trials and practices, I was able to push it to github with some files repeating in the repository.
